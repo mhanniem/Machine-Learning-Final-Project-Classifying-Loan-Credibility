@@ -1,0 +1,496 @@
+@relation 'clean_train_dropped nulls_nomial-weka.filters.unsupervised.attribute.StringToNominal-R3-weka.filters.unsupervised.attribute.Discretize-F-B6-M-1.0-R6,7,8-precision6-weka.filters.unsupervised.attribute.NumericToNominal-R9,10'
+
+@attribute Gender {Male,Female}
+@attribute Married {Yes,No}
+@attribute Dependents {1,0,2,3+}
+@attribute Education {Graduate,'Not Graduate'}
+@attribute Self_Employed {No,Yes}
+@attribute ApplicantIncome {'\'(3871-4906]\'','\'(2503.5-3170]\'','\'(4906-7320.5]\'','\'(-inf-2503.5]\'','\'(7320.5-inf)\'','\'(3170-3871]\''}
+@attribute CoapplicantIncome {'\'(8.06-1512]\'','\'(-inf-8.06]\'','\'(1916-2431]\'','\'(3675-inf)\'','\'(1512-1916]\'','\'(2431-3675]\''}
+@attribute LoanAmount {'\'(110.5-128.5]\'','\'(-inf-87.5]\'','\'(128.5-152.5]\'','\'(187.5-inf)\'','\'(87.5-110.5]\'','\'(152.5-187.5]\''}
+@attribute Loan_Amount_Term {36,60,84,120,180,240,300,360,480}
+@attribute Credit_History {0,1}
+@attribute Property_Area {Rural,Urban,Semiurban}
+@attribute Loan_Status {N,Y}
+
+@data
+Male,Yes,1,Graduate,No,'\'(3871-4906]\'','\'(8.06-1512]\'','\'(110.5-128.5]\'',360,1,Rural,N
+Male,Yes,0,Graduate,Yes,'\'(2503.5-3170]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Urban,Y
+Male,Yes,0,'Not Graduate',No,'\'(2503.5-3170]\'','\'(1916-2431]\'','\'(110.5-128.5]\'',360,1,Urban,Y
+Male,No,0,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Urban,Y
+Male,Yes,2,Graduate,Yes,'\'(4906-7320.5]\'','\'(3675-inf)\'','\'(187.5-inf)\'',360,1,Urban,Y
+Male,Yes,0,'Not Graduate',No,'\'(-inf-2503.5]\'','\'(1512-1916]\'','\'(87.5-110.5]\'',360,1,Urban,Y
+Male,Yes,3+,Graduate,No,'\'(2503.5-3170]\'','\'(2431-3675]\'','\'(152.5-187.5]\'',360,0,Semiurban,N
+Male,Yes,2,Graduate,No,'\'(3871-4906]\'','\'(1512-1916]\'','\'(152.5-187.5]\'',360,1,Urban,Y
+Male,Yes,1,Graduate,No,'\'(7320.5-inf)\'','\'(3675-inf)\'','\'(187.5-inf)\'',360,1,Semiurban,N
+Male,Yes,2,Graduate,No,'\'(3170-3871]\'','\'(8.06-1512]\'','\'(-inf-87.5]\'',360,1,Urban,Y
+Male,Yes,2,Graduate,No,'\'(2503.5-3170]\'','\'(3675-inf)\'','\'(187.5-inf)\'',360,1,Urban,Y
+Male,No,0,Graduate,No,'\'(-inf-2503.5]\'','\'(2431-3675]\'','\'(110.5-128.5]\'',360,1,Rural,N
+Male,Yes,2,Graduate,No,'\'(-inf-2503.5]\'','\'(8.06-1512]\'','\'(-inf-87.5]\'',120,1,Urban,Y
+Male,No,0,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Urban,Y
+Female,No,0,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,0,Urban,N
+Male,Yes,0,'Not Graduate',No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Rural,N
+Male,Yes,0,'Not Graduate',No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,0,Urban,N
+Male,Yes,1,Graduate,No,'\'(4906-7320.5]\'','\'(3675-inf)\'','\'(187.5-inf)\'',360,1,Urban,Y
+Male,Yes,0,'Not Graduate',No,'\'(2503.5-3170]\'','\'(1512-1916]\'','\'(110.5-128.5]\'',360,0,Semiurban,N
+Male,Yes,0,Graduate,Yes,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(2503.5-3170]\'','\'(1916-2431]\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Male,Yes,2,'Not Graduate',No,'\'(3871-4906]\'','\'(8.06-1512]\'','\'(87.5-110.5]\'',360,1,Urban,Y
+Male,No,0,'Not Graduate',No,'\'(-inf-2503.5]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Urban,N
+Male,No,0,Graduate,No,'\'(2503.5-3170]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Urban,N
+Male,No,1,Graduate,Yes,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,1,Rural,N
+Male,Yes,0,Graduate,No,'\'(3170-3871]\'','\'(1512-1916]\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Male,No,3+,Graduate,No,'\'(7320.5-inf)\'','\'(2431-3675]\'','\'(187.5-inf)\'',360,1,Rural,N
+Female,Yes,0,Graduate,No,'\'(3170-3871]\'','\'(8.06-1512]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Male,No,0,Graduate,No,'\'(3871-4906]\'','\'(3675-inf)\'','\'(152.5-187.5]\'',360,1,Urban,Y
+Male,No,0,'Not Graduate',No,'\'(3170-3871]\'','\'(1512-1916]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Male,No,0,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Urban,N
+Male,No,0,Graduate,No,'\'(-inf-2503.5]\'','\'(8.06-1512]\'','\'(-inf-87.5]\'',360,1,Urban,Y
+Male,Yes,0,Graduate,No,'\'(3871-4906]\'','\'(1916-2431]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Male,Yes,1,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Urban,Y
+Male,Yes,0,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Urban,Y
+Female,Yes,0,Graduate,No,'\'(2503.5-3170]\'','\'(2431-3675]\'','\'(110.5-128.5]\'',360,0,Urban,N
+Female,No,0,Graduate,No,'\'(3871-4906]\'','\'(1916-2431]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Female,Yes,0,'Not Graduate',No,'\'(-inf-2503.5]\'','\'(1512-1916]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Female,No,0,Graduate,No,'\'(2503.5-3170]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Female,No,0,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Semiurban,N
+Male,Yes,2,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Urban,N
+Female,Yes,1,Graduate,Yes,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,0,Urban,N
+Male,Yes,2,Graduate,No,'\'(2503.5-3170]\'','\'(8.06-1512]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(1512-1916]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(3170-3871]\'','\'(1916-2431]\'','\'(128.5-152.5]\'',360,1,Rural,N
+Male,Yes,1,Graduate,No,'\'(7320.5-inf)\'','\'(1916-2431]\'','\'(152.5-187.5]\'',360,1,Urban,Y
+Male,Yes,2,'Not Graduate',No,'\'(3170-3871]\'','\'(2431-3675]\'','\'(128.5-152.5]\'',360,1,Urban,Y
+Male,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(3675-inf)\'','\'(110.5-128.5]\'',360,1,Urban,Y
+Male,Yes,3+,Graduate,No,'\'(2503.5-3170]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,1,Urban,Y
+Male,Yes,0,'Not Graduate',Yes,'\'(2503.5-3170]\'','\'(2431-3675]\'','\'(152.5-187.5]\'',180,0,Rural,N
+Female,No,0,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,0,Semiurban,N
+Male,Yes,0,Graduate,No,'\'(4906-7320.5]\'','\'(3675-inf)\'','\'(187.5-inf)\'',360,1,Semiurban,N
+Male,No,0,'Not Graduate',No,'\'(3170-3871]\'','\'(1916-2431]\'','\'(110.5-128.5]\'',180,0,Urban,N
+Male,Yes,1,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Urban,Y
+Male,Yes,3+,'Not Graduate',Yes,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',60,1,Urban,Y
+Female,No,0,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,0,Semiurban,N
+Male,Yes,0,Graduate,No,'\'(3170-3871]\'','\'(2431-3675]\'','\'(152.5-187.5]\'',360,1,Urban,Y
+Male,Yes,2,'Not Graduate',Yes,'\'(-inf-2503.5]\'','\'(1512-1916]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Male,No,0,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',300,1,Semiurban,Y
+Male,Yes,3+,Graduate,Yes,'\'(4906-7320.5]\'','\'(1512-1916]\'','\'(152.5-187.5]\'',360,1,Semiurban,Y
+Male,No,0,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',480,1,Urban,N
+Male,No,0,Graduate,No,'\'(3170-3871]\'','\'(3675-inf)\'','\'(152.5-187.5]\'',360,1,Urban,N
+Male,Yes,1,Graduate,Yes,'\'(-inf-2503.5]\'','\'(2431-3675]\'','\'(87.5-110.5]\'',360,1,Urban,N
+Male,Yes,3+,Graduate,No,'\'(2503.5-3170]\'','\'(3675-inf)\'','\'(152.5-187.5]\'',300,0,Semiurban,N
+Female,No,0,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Female,Yes,2,Graduate,No,'\'(-inf-2503.5]\'','\'(1512-1916]\'','\'(152.5-187.5]\'',360,1,Urban,N
+Male,Yes,1,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',240,1,Urban,Y
+Male,No,0,Graduate,No,'\'(-inf-2503.5]\'','\'(2431-3675]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(1916-2431]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Male,No,0,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Urban,Y
+Male,Yes,0,Graduate,No,'\'(4906-7320.5]\'','\'(3675-inf)\'','\'(152.5-187.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(2503.5-3170]\'','\'(2431-3675]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Male,Yes,2,Graduate,No,'\'(4906-7320.5]\'','\'(3675-inf)\'','\'(187.5-inf)\'',180,1,Semiurban,Y
+Male,Yes,2,'Not Graduate',No,'\'(3170-3871]\'','\'(1512-1916]\'','\'(-inf-87.5]\'',360,1,Urban,Y
+Male,No,0,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Male,No,0,'Not Graduate',No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',120,1,Semiurban,Y
+Female,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(1916-2431]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(8.06-1512]\'','\'(-inf-87.5]\'',360,1,Semiurban,Y
+Male,Yes,0,'Not Graduate',No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',180,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(2431-3675]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Male,Yes,2,'Not Graduate',No,'\'(3871-4906]\'','\'(2431-3675]\'','\'(128.5-152.5]\'',180,1,Urban,Y
+Male,No,0,Graduate,No,'\'(3871-4906]\'','\'(3675-inf)\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Male,Yes,1,Graduate,No,'\'(2503.5-3170]\'','\'(8.06-1512]\'','\'(87.5-110.5]\'',360,1,Urban,Y
+Male,Yes,2,Graduate,No,'\'(7320.5-inf)\'','\'(8.06-1512]\'','\'(187.5-inf)\'',360,1,Urban,Y
+Male,Yes,2,Graduate,No,'\'(3170-3871]\'','\'(2431-3675]\'','\'(187.5-inf)\'',360,0,Urban,N
+Male,Yes,3+,'Not Graduate',No,'\'(-inf-2503.5]\'','\'(8.06-1512]\'','\'(87.5-110.5]\'',480,1,Semiurban,Y
+Male,No,0,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Urban,Y
+Male,Yes,1,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',180,1,Rural,Y
+Female,Yes,0,Graduate,No,'\'(2503.5-3170]\'','\'(1916-2431]\'','\'(152.5-187.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(4906-7320.5]\'','\'(1916-2431]\'','\'(152.5-187.5]\'',360,1,Rural,N
+Female,No,0,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Urban,Y
+Female,No,0,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Semiurban,Y
+Female,No,0,Graduate,No,'\'(-inf-2503.5]\'','\'(3675-inf)\'','\'(128.5-152.5]\'',360,0,Semiurban,Y
+Male,Yes,2,Graduate,No,'\'(2503.5-3170]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Semiurban,Y
+Male,Yes,0,'Not Graduate',No,'\'(3871-4906]\'','\'(1916-2431]\'','\'(187.5-inf)\'',360,1,Rural,Y
+Male,Yes,1,Graduate,Yes,'\'(7320.5-inf)\'','\'(3675-inf)\'','\'(152.5-187.5]\'',180,0,Urban,N
+Male,No,0,Graduate,No,'\'(-inf-2503.5]\'','\'(1916-2431]\'','\'(-inf-87.5]\'',360,1,Urban,Y
+Male,No,0,Graduate,No,'\'(2503.5-3170]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,Yes,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',120,1,Semiurban,Y
+Male,No,0,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Male,Yes,3+,Graduate,No,'\'(3871-4906]\'','\'(3675-inf)\'','\'(187.5-inf)\'',360,1,Semiurban,N
+Female,Yes,0,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Rural,N
+Male,Yes,2,Graduate,Yes,'\'(3170-3871]\'','\'(2431-3675]\'','\'(87.5-110.5]\'',360,1,Urban,Y
+Male,No,0,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,0,Semiurban,N
+Male,Yes,2,'Not Graduate',No,'\'(3871-4906]\'','\'(8.06-1512]\'','\'(128.5-152.5]\'',360,1,Rural,N
+Male,Yes,2,Graduate,No,'\'(4906-7320.5]\'','\'(1916-2431]\'','\'(152.5-187.5]\'',360,1,Rural,N
+Male,No,0,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',360,1,Urban,Y
+Male,No,0,Graduate,Yes,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',180,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(2503.5-3170]\'','\'(1916-2431]\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Male,Yes,2,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',180,1,Urban,Y
+Female,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(3675-inf)\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Female,Yes,2,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Urban,Y
+Male,Yes,1,Graduate,No,'\'(-inf-2503.5]\'','\'(8.06-1512]\'','\'(-inf-87.5]\'',360,1,Urban,Y
+Female,No,0,Graduate,No,'\'(7320.5-inf)\'','\'(1512-1916]\'','\'(187.5-inf)\'',360,1,Rural,N
+Male,Yes,0,Graduate,No,'\'(3871-4906]\'','\'(8.06-1512]\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Male,No,0,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,0,Rural,N
+Male,Yes,0,Graduate,Yes,'\'(2503.5-3170]\'','\'(3675-inf)\'','\'(128.5-152.5]\'',360,1,Rural,Y
+Male,No,0,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Urban,N
+Male,Yes,2,'Not Graduate',No,'\'(-inf-2503.5]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Rural,N
+Male,No,0,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Urban,Y
+Male,Yes,3+,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',180,0,Semiurban,Y
+Male,Yes,1,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',360,1,Urban,Y
+Male,Yes,0,Graduate,No,'\'(3871-4906]\'','\'(3675-inf)\'','\'(187.5-inf)\'',360,1,Semiurban,Y
+Male,Yes,0,'Not Graduate',No,'\'(-inf-2503.5]\'','\'(8.06-1512]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Urban,N
+Male,Yes,1,Graduate,No,'\'(2503.5-3170]\'','\'(8.06-1512]\'','\'(110.5-128.5]\'',360,0,Semiurban,N
+Male,Yes,2,Graduate,No,'\'(3871-4906]\'','\'(8.06-1512]\'','\'(152.5-187.5]\'',360,1,Rural,Y
+Male,Yes,0,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',180,1,Urban,Y
+Female,Yes,0,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Rural,N
+Male,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(2431-3675]\'','\'(128.5-152.5]\'',360,1,Rural,Y
+Male,No,0,Graduate,No,'\'(-inf-2503.5]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',480,0,Semiurban,N
+Male,Yes,2,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Semiurban,Y
+Male,Yes,3+,'Not Graduate',No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',180,1,Rural,N
+Male,Yes,0,Graduate,No,'\'(4906-7320.5]\'','\'(3675-inf)\'','\'(152.5-187.5]\'',360,1,Semiurban,Y
+Male,Yes,0,'Not Graduate',Yes,'\'(3871-4906]\'','\'(8.06-1512]\'','\'(-inf-87.5]\'',360,1,Semiurban,N
+Male,Yes,0,Graduate,No,'\'(3170-3871]\'','\'(1916-2431]\'','\'(110.5-128.5]\'',360,1,Rural,Y
+Male,Yes,2,Graduate,No,'\'(-inf-2503.5]\'','\'(1512-1916]\'','\'(87.5-110.5]\'',360,1,Rural,Y
+Male,Yes,3+,Graduate,No,'\'(4906-7320.5]\'','\'(3675-inf)\'','\'(187.5-inf)\'',360,0,Semiurban,N
+Male,Yes,1,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Male,No,0,'Not Graduate',No,'\'(-inf-2503.5]\'','\'(8.06-1512]\'','\'(87.5-110.5]\'',480,0,Urban,N
+Male,Yes,1,Graduate,No,'\'(4906-7320.5]\'','\'(3675-inf)\'','\'(152.5-187.5]\'',360,0,Urban,N
+Male,Yes,0,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',180,1,Semiurban,Y
+Male,Yes,1,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Semiurban,N
+Female,Yes,0,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,Yes,'\'(7320.5-inf)\'','\'(3675-inf)\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Male,Yes,1,Graduate,Yes,'\'(-inf-2503.5]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',300,0,Rural,N
+Male,Yes,0,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',180,1,Rural,Y
+Male,No,0,'Not Graduate',No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Rural,Y
+Male,No,0,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',360,1,Semiurban,N
+Male,Yes,0,'Not Graduate',No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',360,1,Urban,N
+Male,No,0,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Semiurban,Y
+Male,No,0,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Rural,Y
+Male,Yes,1,Graduate,No,'\'(2503.5-3170]\'','\'(2431-3675]\'','\'(152.5-187.5]\'',360,1,Semiurban,N
+Male,No,0,Graduate,No,'\'(7320.5-inf)\'','\'(3675-inf)\'','\'(152.5-187.5]\'',360,1,Rural,Y
+Male,No,0,Graduate,Yes,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Urban,N
+Male,Yes,1,'Not Graduate',No,'\'(2503.5-3170]\'','\'(2431-3675]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Male,No,2,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',360,0,Semiurban,Y
+Male,Yes,1,'Not Graduate',No,'\'(3170-3871]\'','\'(8.06-1512]\'','\'(128.5-152.5]\'',360,1,Urban,Y
+Male,Yes,2,'Not Graduate',No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Female,No,0,'Not Graduate',No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Female,No,0,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Urban,Y
+Male,No,0,'Not Graduate',No,'\'(3871-4906]\'','\'(2431-3675]\'','\'(-inf-87.5]\'',360,1,Rural,Y
+Male,No,0,Graduate,No,'\'(-inf-2503.5]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Urban,Y
+Male,No,0,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Semiurban,N
+Female,No,0,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Semiurban,N
+Male,Yes,3+,Graduate,No,'\'(3170-3871]\'','\'(8.06-1512]\'','\'(110.5-128.5]\'',360,0,Semiurban,N
+Male,Yes,1,Graduate,Yes,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Urban,Y
+Male,Yes,3+,'Not Graduate',Yes,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Rural,Y
+Male,Yes,0,Graduate,No,'\'(3170-3871]\'','\'(2431-3675]\'','\'(128.5-152.5]\'',360,1,Urban,Y
+Male,Yes,3+,'Not Graduate',No,'\'(3170-3871]\'','\'(8.06-1512]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(1512-1916]\'','\'(128.5-152.5]\'',360,1,Rural,N
+Male,Yes,0,Graduate,No,'\'(3170-3871]\'','\'(1512-1916]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,0,Urban,N
+Male,Yes,2,Graduate,No,'\'(3871-4906]\'','\'(1512-1916]\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Male,No,0,Graduate,No,'\'(2503.5-3170]\'','\'(2431-3675]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',360,1,Rural,N
+Male,Yes,2,Graduate,No,'\'(4906-7320.5]\'','\'(1512-1916]\'','\'(187.5-inf)\'',360,1,Semiurban,Y
+Male,No,0,Graduate,Yes,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Rural,Y
+Male,Yes,1,Graduate,No,'\'(-inf-2503.5]\'','\'(1916-2431]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Female,No,0,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Semiurban,Y
+Male,Yes,1,Graduate,No,'\'(2503.5-3170]\'','\'(1512-1916]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Male,Yes,1,Graduate,No,'\'(4906-7320.5]\'','\'(8.06-1512]\'','\'(152.5-187.5]\'',360,1,Rural,Y
+Female,No,1,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Rural,Y
+Male,Yes,1,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Male,Yes,2,Graduate,No,'\'(4906-7320.5]\'','\'(3675-inf)\'','\'(110.5-128.5]\'',360,1,Rural,Y
+Male,Yes,1,'Not Graduate',No,'\'(2503.5-3170]\'','\'(1916-2431]\'','\'(128.5-152.5]\'',180,1,Urban,N
+Male,No,0,Graduate,No,'\'(2503.5-3170]\'','\'(3675-inf)\'','\'(152.5-187.5]\'',60,1,Urban,Y
+Male,Yes,2,Graduate,Yes,'\'(4906-7320.5]\'','\'(8.06-1512]\'','\'(87.5-110.5]\'',360,1,Rural,Y
+Male,Yes,0,'Not Graduate',No,'\'(3170-3871]\'','\'(3675-inf)\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Male,No,0,Graduate,Yes,'\'(4906-7320.5]\'','\'(3675-inf)\'','\'(110.5-128.5]\'',180,1,Urban,N
+Male,Yes,2,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Urban,Y
+Male,Yes,1,'Not Graduate',No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',180,1,Urban,Y
+Male,Yes,1,Graduate,No,'\'(2503.5-3170]\'','\'(1512-1916]\'','\'(110.5-128.5]\'',480,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(1512-1916]\'','\'(87.5-110.5]\'',360,1,Urban,Y
+Male,Yes,0,'Not Graduate',No,'\'(-inf-2503.5]\'','\'(3675-inf)\'','\'(187.5-inf)\'',360,0,Semiurban,N
+Female,No,2,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Urban,N
+Male,No,0,'Not Graduate',Yes,'\'(2503.5-3170]\'','\'(1916-2431]\'','\'(87.5-110.5]\'',360,1,Rural,Y
+Male,Yes,1,'Not Graduate',No,'\'(2503.5-3170]\'','\'(3675-inf)\'','\'(187.5-inf)\'',180,1,Semiurban,Y
+Male,No,0,Graduate,Yes,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,0,Urban,N
+Female,No,3+,Graduate,No,'\'(2503.5-3170]\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Rural,Y
+Male,No,0,'Not Graduate',No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,0,Rural,N
+Male,Yes,3+,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,1,Urban,N
+Male,Yes,0,Graduate,No,'\'(7320.5-inf)\'','\'(1916-2431]\'','\'(187.5-inf)\'',360,1,Rural,N
+Male,No,0,Graduate,No,'\'(-inf-2503.5]\'','\'(1916-2431]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Female,No,1,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',36,1,Semiurban,N
+Female,No,0,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Rural,Y
+Male,No,0,Graduate,Yes,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Male,No,0,Graduate,No,'\'(3871-4906]\'','\'(2431-3675]\'','\'(128.5-152.5]\'',360,1,Rural,Y
+Male,Yes,2,Graduate,No,'\'(3871-4906]\'','\'(8.06-1512]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Male,Yes,3+,Graduate,No,'\'(3871-4906]\'','\'(1512-1916]\'','\'(152.5-187.5]\'',360,0,Urban,Y
+Female,No,1,Graduate,No,'\'(2503.5-3170]\'','\'(1512-1916]\'','\'(87.5-110.5]\'',360,1,Urban,Y
+Female,No,0,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Urban,Y
+Male,Yes,0,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Urban,Y
+Male,No,0,Graduate,No,'\'(2503.5-3170]\'','\'(1512-1916]\'','\'(110.5-128.5]\'',360,1,Rural,Y
+Male,Yes,0,Graduate,No,'\'(2503.5-3170]\'','\'(1916-2431]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Male,Yes,2,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Male,Yes,1,Graduate,No,'\'(2503.5-3170]\'','\'(1512-1916]\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(3871-4906]\'','\'(2431-3675]\'','\'(187.5-inf)\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(2503.5-3170]\'','\'(8.06-1512]\'','\'(-inf-87.5]\'',360,1,Urban,Y
+Male,Yes,0,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Semiurban,Y
+Male,No,1,'Not Graduate',Yes,'\'(3871-4906]\'','\'(1916-2431]\'','\'(152.5-187.5]\'',360,0,Urban,N
+Male,Yes,0,Graduate,No,'\'(3871-4906]\'','\'(8.06-1512]\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Male,Yes,2,Graduate,No,'\'(-inf-2503.5]\'','\'(8.06-1512]\'','\'(-inf-87.5]\'',180,1,Urban,Y
+Female,No,0,Graduate,No,'\'(-inf-2503.5]\'','\'(1512-1916]\'','\'(-inf-87.5]\'',360,1,Urban,Y
+Male,No,0,Graduate,No,'\'(2503.5-3170]\'','\'(2431-3675]\'','\'(87.5-110.5]\'',360,1,Rural,Y
+Female,No,0,Graduate,Yes,'\'(2503.5-3170]\'','\'(1512-1916]\'','\'(87.5-110.5]\'',300,1,Semiurban,N
+Male,Yes,0,Graduate,No,'\'(3170-3871]\'','\'(1916-2431]\'','\'(110.5-128.5]\'',360,1,Rural,Y
+Female,No,0,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Male,No,0,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',360,1,Rural,Y
+Male,Yes,0,Graduate,No,'\'(2503.5-3170]\'','\'(1916-2431]\'','\'(128.5-152.5]\'',360,1,Rural,Y
+Male,Yes,2,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,0,Semiurban,N
+Male,Yes,2,Graduate,No,'\'(2503.5-3170]\'','\'(1512-1916]\'','\'(128.5-152.5]\'',360,1,Urban,Y
+Male,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(2431-3675]\'','\'(152.5-187.5]\'',360,1,Semiurban,Y
+Male,Yes,1,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Semiurban,Y
+Female,Yes,1,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Urban,Y
+Female,No,0,Graduate,No,'\'(4906-7320.5]\'','\'(2431-3675]\'','\'(128.5-152.5]\'',480,1,Rural,N
+Male,Yes,1,Graduate,No,'\'(-inf-2503.5]\'','\'(2431-3675]\'','\'(110.5-128.5]\'',360,1,Urban,N
+Male,Yes,0,'Not Graduate',No,'\'(-inf-2503.5]\'','\'(2431-3675]\'','\'(87.5-110.5]\'',360,0,Urban,N
+Female,No,0,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Rural,Y
+Male,Yes,1,Graduate,No,'\'(-inf-2503.5]\'','\'(1512-1916]\'','\'(87.5-110.5]\'',360,1,Urban,Y
+Male,No,0,Graduate,No,'\'(3871-4906]\'','\'(2431-3675]\'','\'(128.5-152.5]\'',360,1,Rural,Y
+Female,No,0,Graduate,No,'\'(3170-3871]\'','\'(1512-1916]\'','\'(128.5-152.5]\'',360,1,Rural,Y
+Female,No,0,Graduate,No,'\'(-inf-2503.5]\'','\'(1512-1916]\'','\'(87.5-110.5]\'',360,0,Urban,N
+Male,No,0,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Rural,N
+Female,No,0,Graduate,No,'\'(2503.5-3170]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Semiurban,Y
+Male,No,0,'Not Graduate',No,'\'(2503.5-3170]\'','\'(1916-2431]\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Female,No,0,Graduate,No,'\'(2503.5-3170]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Rural,Y
+Male,Yes,1,'Not Graduate',No,'\'(3170-3871]\'','\'(1512-1916]\'','\'(110.5-128.5]\'',180,1,Urban,Y
+Male,Yes,2,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Male,Yes,1,Graduate,Yes,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',360,1,Rural,N
+Male,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(1916-2431]\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Male,Yes,3+,Graduate,No,'\'(3871-4906]\'','\'(8.06-1512]\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Male,Yes,3+,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Rural,Y
+Male,Yes,1,Graduate,Yes,'\'(7320.5-inf)\'','\'(3675-inf)\'','\'(187.5-inf)\'',360,0,Rural,N
+Male,No,0,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,0,Rural,Y
+Male,Yes,0,Graduate,Yes,'\'(4906-7320.5]\'','\'(1916-2431]\'','\'(152.5-187.5]\'',360,1,Semiurban,Y
+Female,Yes,0,Graduate,No,'\'(3871-4906]\'','\'(2431-3675]\'','\'(87.5-110.5]\'',360,1,Urban,N
+Female,No,0,Graduate,No,'\'(-inf-2503.5]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Urban,Y
+Male,No,1,Graduate,No,'\'(3871-4906]\'','\'(1512-1916]\'','\'(110.5-128.5]\'',360,1,Urban,Y
+Male,No,0,Graduate,No,'\'(2503.5-3170]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Male,Yes,2,Graduate,Yes,'\'(-inf-2503.5]\'','\'(3675-inf)\'','\'(152.5-187.5]\'',360,1,Rural,Y
+Female,No,0,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Semiurban,Y
+Male,Yes,3+,'Not Graduate',No,'\'(2503.5-3170]\'','\'(1512-1916]\'','\'(152.5-187.5]\'',360,1,Rural,N
+Female,No,0,Graduate,No,'\'(-inf-2503.5]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Rural,N
+Male,Yes,1,'Not Graduate',No,'\'(3871-4906]\'','\'(8.06-1512]\'','\'(152.5-187.5]\'',360,1,Urban,Y
+Male,Yes,3+,'Not Graduate',No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(2431-3675]\'','\'(152.5-187.5]\'',360,1,Semiurban,Y
+Male,Yes,2,'Not Graduate',No,'\'(2503.5-3170]\'','\'(1916-2431]\'','\'(110.5-128.5]\'',360,1,Urban,Y
+Male,Yes,0,Graduate,No,'\'(2503.5-3170]\'','\'(3675-inf)\'','\'(152.5-187.5]\'',360,1,Rural,Y
+Male,Yes,0,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Semiurban,Y
+Male,No,0,Graduate,No,'\'(7320.5-inf)\'','\'(3675-inf)\'','\'(187.5-inf)\'',360,1,Rural,N
+Male,Yes,3+,Graduate,No,'\'(2503.5-3170]\'','\'(1916-2431]\'','\'(87.5-110.5]\'',360,1,Rural,Y
+Female,Yes,0,Graduate,Yes,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,0,Rural,N
+Female,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(8.06-1512]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Male,Yes,2,Graduate,No,'\'(7320.5-inf)\'','\'(2431-3675]\'','\'(152.5-187.5]\'',360,1,Rural,Y
+Male,Yes,1,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Urban,N
+Male,Yes,0,'Not Graduate',No,'\'(2503.5-3170]\'','\'(1512-1916]\'','\'(87.5-110.5]\'',480,0,Urban,N
+Male,Yes,3+,Graduate,No,'\'(4906-7320.5]\'','\'(2431-3675]\'','\'(187.5-inf)\'',360,1,Semiurban,Y
+Female,No,1,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Semiurban,N
+Male,Yes,2,Graduate,No,'\'(4906-7320.5]\'','\'(2431-3675]\'','\'(187.5-inf)\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(3871-4906]\'','\'(1916-2431]\'','\'(128.5-152.5]\'',360,1,Urban,Y
+Male,No,0,Graduate,Yes,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Rural,Y
+Male,No,0,'Not Graduate',No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Rural,N
+Male,No,0,Graduate,No,'\'(-inf-2503.5]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',480,1,Semiurban,N
+Male,Yes,1,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(7320.5-inf)\'','\'(3675-inf)\'','\'(187.5-inf)\'',360,1,Rural,N
+Female,No,0,Graduate,Yes,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Semiurban,Y
+Male,Yes,2,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',360,1,Semiurban,Y
+Male,Yes,2,Graduate,Yes,'\'(7320.5-inf)\'','\'(3675-inf)\'','\'(187.5-inf)\'',300,1,Rural,Y
+Male,No,1,Graduate,No,'\'(2503.5-3170]\'','\'(1916-2431]\'','\'(110.5-128.5]\'',180,0,Urban,N
+Male,Yes,0,Graduate,No,'\'(3871-4906]\'','\'(8.06-1512]\'','\'(110.5-128.5]\'',180,1,Urban,Y
+Male,Yes,3+,Graduate,No,'\'(7320.5-inf)\'','\'(3675-inf)\'','\'(128.5-152.5]\'',360,1,Rural,Y
+Male,No,0,Graduate,No,'\'(2503.5-3170]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',480,1,Urban,N
+Male,Yes,2,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Urban,Y
+Male,No,0,Graduate,No,'\'(4906-7320.5]\'','\'(3675-inf)\'','\'(187.5-inf)\'',360,1,Semiurban,Y
+Female,No,0,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',360,1,Urban,Y
+Male,No,0,Graduate,Yes,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Urban,Y
+Male,Yes,2,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,1,Urban,N
+Male,No,0,'Not Graduate',No,'\'(-inf-2503.5]\'','\'(1512-1916]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(1916-2431]\'','\'(128.5-152.5]\'',360,1,Urban,Y
+Male,Yes,0,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Rural,Y
+Male,No,3+,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',360,1,Rural,Y
+Male,Yes,3+,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Rural,Y
+Male,Yes,2,'Not Graduate',No,'\'(-inf-2503.5]\'','\'(1512-1916]\'','\'(110.5-128.5]\'',180,1,Semiurban,Y
+Male,Yes,2,Graduate,No,'\'(2503.5-3170]\'','\'(8.06-1512]\'','\'(110.5-128.5]\'',360,1,Urban,Y
+Female,No,0,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,0,Urban,N
+Male,Yes,0,Graduate,No,'\'(2503.5-3170]\'','\'(8.06-1512]\'','\'(87.5-110.5]\'',360,1,Urban,Y
+Male,No,0,'Not Graduate',No,'\'(3871-4906]\'','\'(1512-1916]\'','\'(87.5-110.5]\'',360,1,Rural,Y
+Female,No,0,Graduate,No,'\'(-inf-2503.5]\'','\'(1512-1916]\'','\'(87.5-110.5]\'',360,0,Semiurban,N
+Male,Yes,2,'Not Graduate',No,'\'(2503.5-3170]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',180,0,Urban,N
+Male,No,0,'Not Graduate',No,'\'(2503.5-3170]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',300,1,Rural,N
+Male,No,0,Graduate,No,'\'(-inf-2503.5]\'','\'(3675-inf)\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Female,No,0,'Not Graduate',No,'\'(-inf-2503.5]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Semiurban,Y
+Female,No,0,Graduate,Yes,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Rural,N
+Female,No,0,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Male,Yes,0,'Not Graduate',No,'\'(-inf-2503.5]\'','\'(1916-2431]\'','\'(110.5-128.5]\'',360,1,Urban,Y
+Female,No,0,'Not Graduate',No,'\'(-inf-2503.5]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Rural,Y
+Male,Yes,1,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',300,0,Semiurban,N
+Male,Yes,3+,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,0,Rural,N
+Female,No,1,'Not Graduate',Yes,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Semiurban,N
+Male,Yes,0,'Not Graduate',No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,0,Rural,N
+Male,Yes,0,'Not Graduate',No,'\'(-inf-2503.5]\'','\'(1916-2431]\'','\'(87.5-110.5]\'',360,1,Rural,Y
+Female,Yes,0,'Not Graduate',No,'\'(-inf-2503.5]\'','\'(2431-3675]\'','\'(152.5-187.5]\'',360,0,Semiurban,N
+Female,No,0,Graduate,No,'\'(2503.5-3170]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Urban,Y
+Female,No,1,Graduate,No,'\'(2503.5-3170]\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',360,1,Urban,N
+Male,Yes,2,Graduate,Yes,'\'(-inf-2503.5]\'','\'(3675-inf)\'','\'(187.5-inf)\'',360,1,Urban,N
+Male,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(2431-3675]\'','\'(110.5-128.5]\'',360,1,Rural,Y
+Male,Yes,0,Graduate,No,'\'(3170-3871]\'','\'(8.06-1512]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Rural,Y
+Male,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(1512-1916]\'','\'(87.5-110.5]\'',360,1,Urban,Y
+Male,Yes,0,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(2503.5-3170]\'','\'(3675-inf)\'','\'(110.5-128.5]\'',360,1,Rural,Y
+Female,No,1,'Not Graduate',No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Rural,N
+Male,Yes,2,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(2503.5-3170]\'','\'(8.06-1512]\'','\'(-inf-87.5]\'',360,1,Rural,Y
+Male,No,0,'Not Graduate',No,'\'(2503.5-3170]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',180,1,Urban,Y
+Female,No,1,Graduate,Yes,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Male,No,0,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,0,Rural,N
+Male,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(1916-2431]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Male,No,0,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,1,Urban,Y
+Male,No,0,Graduate,No,'\'(-inf-2503.5]\'','\'(1512-1916]\'','\'(-inf-87.5]\'',360,1,Semiurban,Y
+Male,No,0,Graduate,Yes,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',360,0,Urban,N
+Female,Yes,0,'Not Graduate',Yes,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Rural,Y
+Male,No,0,Graduate,No,'\'(3170-3871]\'','\'(3675-inf)\'','\'(152.5-187.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(7320.5-inf)\'','\'(1512-1916]\'','\'(152.5-187.5]\'',360,1,Rural,Y
+Male,No,3+,'Not Graduate',No,'\'(3871-4906]\'','\'(1916-2431]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Male,No,1,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Male,Yes,1,Graduate,Yes,'\'(3170-3871]\'','\'(8.06-1512]\'','\'(128.5-152.5]\'',360,1,Rural,Y
+Male,Yes,2,'Not Graduate',No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,1,Rural,Y
+Male,Yes,2,Graduate,No,'\'(3170-3871]\'','\'(1512-1916]\'','\'(128.5-152.5]\'',360,0,Rural,N
+Male,Yes,2,'Not Graduate',No,'\'(-inf-2503.5]\'','\'(8.06-1512]\'','\'(110.5-128.5]\'',360,0,Rural,N
+Male,Yes,0,Graduate,No,'\'(3871-4906]\'','\'(1512-1916]\'','\'(128.5-152.5]\'',360,0,Rural,N
+Male,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(2431-3675]\'','\'(87.5-110.5]\'',180,0,Rural,Y
+Male,No,0,Graduate,Yes,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Semiurban,Y
+Male,Yes,2,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Urban,Y
+Male,Yes,0,Graduate,No,'\'(3170-3871]\'','\'(2431-3675]\'','\'(152.5-187.5]\'',360,1,Urban,N
+Male,No,2,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Rural,Y
+Male,Yes,0,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',360,1,Semiurban,N
+Male,Yes,3+,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',180,1,Urban,Y
+Male,Yes,0,Graduate,No,'\'(2503.5-3170]\'','\'(1916-2431]\'','\'(152.5-187.5]\'',360,1,Rural,Y
+Male,No,0,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,0,Semiurban,N
+Male,No,0,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Rural,Y
+Male,Yes,3+,'Not Graduate',No,'\'(2503.5-3170]\'','\'(1512-1916]\'','\'(-inf-87.5]\'',180,0,Urban,N
+Male,Yes,0,Graduate,No,'\'(3871-4906]\'','\'(2431-3675]\'','\'(87.5-110.5]\'',360,1,Urban,N
+Male,Yes,1,Graduate,Yes,'\'(3170-3871]\'','\'(1916-2431]\'','\'(152.5-187.5]\'',360,1,Semiurban,Y
+Male,Yes,1,'Not Graduate',No,'\'(2503.5-3170]\'','\'(8.06-1512]\'','\'(110.5-128.5]\'',180,0,Rural,N
+Male,Yes,3+,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Male,No,2,Graduate,No,'\'(4906-7320.5]\'','\'(3675-inf)\'','\'(152.5-187.5]\'',360,1,Rural,Y
+Male,Yes,2,Graduate,Yes,'\'(7320.5-inf)\'','\'(8.06-1512]\'','\'(128.5-152.5]\'',360,1,Rural,Y
+Male,Yes,2,Graduate,No,'\'(4906-7320.5]\'','\'(1512-1916]\'','\'(187.5-inf)\'',300,1,Semiurban,Y
+Male,Yes,1,Graduate,Yes,'\'(7320.5-inf)\'','\'(1916-2431]\'','\'(-inf-87.5]\'',360,1,Semiurban,Y
+Female,No,0,'Not Graduate',No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',360,1,Rural,Y
+Male,Yes,3+,'Not Graduate',No,'\'(2503.5-3170]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Rural,Y
+Male,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(2431-3675]\'','\'(110.5-128.5]\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Semiurban,Y
+Male,Yes,2,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Semiurban,Y
+Male,Yes,1,'Not Graduate',No,'\'(-inf-2503.5]\'','\'(2431-3675]\'','\'(128.5-152.5]\'',360,1,Rural,Y
+Male,No,2,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,0,Rural,N
+Male,Yes,1,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Urban,N
+Male,Yes,2,Graduate,Yes,'\'(3871-4906]\'','\'(1916-2431]\'','\'(152.5-187.5]\'',360,1,Semiurban,Y
+Male,No,0,Graduate,No,'\'(-inf-2503.5]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Urban,N
+Male,No,0,'Not Graduate',No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,1,Rural,Y
+Female,No,0,'Not Graduate',Yes,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(3170-3871]\'','\'(1916-2431]\'','\'(110.5-128.5]\'',360,0,Rural,N
+Female,Yes,1,Graduate,No,'\'(3170-3871]\'','\'(8.06-1512]\'','\'(87.5-110.5]\'',84,1,Semiurban,Y
+Male,Yes,0,'Not Graduate',No,'\'(2503.5-3170]\'','\'(1512-1916]\'','\'(87.5-110.5]\'',360,1,Rural,Y
+Male,Yes,1,Graduate,Yes,'\'(2503.5-3170]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Male,No,0,Graduate,No,'\'(4906-7320.5]\'','\'(3675-inf)\'','\'(187.5-inf)\'',360,0,Rural,N
+Female,No,0,Graduate,No,'\'(-inf-2503.5]\'','\'(3675-inf)\'','\'(110.5-128.5]\'',480,1,Rural,Y
+Female,No,0,Graduate,No,'\'(2503.5-3170]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Male,Yes,2,Graduate,No,'\'(3871-4906]\'','\'(3675-inf)\'','\'(187.5-inf)\'',360,1,Semiurban,Y
+Male,Yes,0,'Not Graduate',No,'\'(3170-3871]\'','\'(8.06-1512]\'','\'(110.5-128.5]\'',300,1,Semiurban,Y
+Male,Yes,2,Graduate,No,'\'(3170-3871]\'','\'(3675-inf)\'','\'(187.5-inf)\'',360,1,Rural,Y
+Male,Yes,0,Graduate,Yes,'\'(-inf-2503.5]\'','\'(2431-3675]\'','\'(187.5-inf)\'',360,1,Urban,Y
+Female,No,1,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Urban,Y
+Male,No,0,'Not Graduate',No,'\'(3170-3871]\'','\'(8.06-1512]\'','\'(87.5-110.5]\'',360,1,Rural,N
+Male,Yes,1,Graduate,No,'\'(4906-7320.5]\'','\'(1916-2431]\'','\'(187.5-inf)\'',360,1,Semiurban,Y
+Male,Yes,2,Graduate,No,'\'(3170-3871]\'','\'(1916-2431]\'','\'(128.5-152.5]\'',360,1,Urban,Y
+Male,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(3675-inf)\'','\'(-inf-87.5]\'',180,1,Semiurban,N
+Male,No,0,Graduate,No,'\'(4906-7320.5]\'','\'(2431-3675]\'','\'(187.5-inf)\'',360,1,Rural,N
+Male,Yes,3+,Graduate,No,'\'(3170-3871]\'','\'(2431-3675]\'','\'(128.5-152.5]\'',360,1,Rural,Y
+Female,Yes,2,Graduate,No,'\'(-inf-2503.5]\'','\'(1512-1916]\'','\'(110.5-128.5]\'',480,1,Semiurban,Y
+Male,No,0,Graduate,No,'\'(3871-4906]\'','\'(1512-1916]\'','\'(152.5-187.5]\'',360,1,Semiurban,N
+Female,No,0,'Not Graduate',No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,1,Rural,N
+Male,Yes,2,'Not Graduate',No,'\'(-inf-2503.5]\'','\'(1512-1916]\'','\'(-inf-87.5]\'',360,1,Semiurban,Y
+Male,No,0,Graduate,No,'\'(-inf-2503.5]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Semiurban,Y
+Male,Yes,3+,Graduate,Yes,'\'(4906-7320.5]\'','\'(8.06-1512]\'','\'(87.5-110.5]\'',360,1,Rural,Y
+Male,Yes,2,Graduate,Yes,'\'(7320.5-inf)\'','\'(3675-inf)\'','\'(187.5-inf)\'',360,1,Rural,Y
+Male,Yes,2,Graduate,Yes,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Rural,Y
+Male,Yes,0,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Male,Yes,1,'Not Graduate',No,'\'(4906-7320.5]\'','\'(8.06-1512]\'','\'(152.5-187.5]\'',360,0,Semiurban,Y
+Male,No,1,'Not Graduate',No,'\'(2503.5-3170]\'','\'(8.06-1512]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Male,No,0,'Not Graduate',No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Male,Yes,3+,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,1,Urban,Y
+Male,No,2,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,0,Rural,N
+Female,No,0,'Not Graduate',Yes,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Urban,Y
+Male,Yes,0,Graduate,No,'\'(4906-7320.5]\'','\'(3675-inf)\'','\'(187.5-inf)\'',360,1,Urban,Y
+Male,No,2,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Male,Yes,0,'Not Graduate',No,'\'(2503.5-3170]\'','\'(8.06-1512]\'','\'(-inf-87.5]\'',360,1,Rural,N
+Male,Yes,3+,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',180,1,Rural,Y
+Female,Yes,1,Graduate,No,'\'(3871-4906]\'','\'(2431-3675]\'','\'(128.5-152.5]\'',180,1,Semiurban,Y
+Female,No,0,Graduate,No,'\'(-inf-2503.5]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,0,Semiurban,N
+Male,Yes,1,'Not Graduate',No,'\'(-inf-2503.5]\'','\'(2431-3675]\'','\'(110.5-128.5]\'',360,1,Urban,Y
+Male,Yes,0,Graduate,No,'\'(2503.5-3170]\'','\'(1916-2431]\'','\'(152.5-187.5]\'',360,1,Rural,Y
+Male,No,0,'Not Graduate',No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',36,1,Semiurban,N
+Male,No,0,Graduate,No,'\'(2503.5-3170]\'','\'(1512-1916]\'','\'(128.5-152.5]\'',360,1,Rural,Y
+Female,No,0,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,0,Semiurban,N
+Male,Yes,0,Graduate,No,'\'(2503.5-3170]\'','\'(1916-2431]\'','\'(87.5-110.5]\'',360,1,Rural,Y
+Male,Yes,1,Graduate,No,'\'(3170-3871]\'','\'(2431-3675]\'','\'(152.5-187.5]\'',360,1,Urban,Y
+Male,Yes,0,'Not Graduate',No,'\'(-inf-2503.5]\'','\'(1916-2431]\'','\'(152.5-187.5]\'',360,0,Urban,N
+Male,Yes,0,Graduate,No,'\'(3170-3871]\'','\'(3675-inf)\'','\'(128.5-152.5]\'',180,0,Rural,N
+Male,Yes,1,Graduate,No,'\'(4906-7320.5]\'','\'(8.06-1512]\'','\'(-inf-87.5]\'',360,1,Semiurban,Y
+Male,Yes,3+,Graduate,Yes,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(3871-4906]\'','\'(2431-3675]\'','\'(152.5-187.5]\'',360,1,Semiurban,Y
+Female,Yes,0,Graduate,No,'\'(3871-4906]\'','\'(1916-2431]\'','\'(152.5-187.5]\'',360,1,Semiurban,Y
+Male,Yes,2,'Not Graduate',No,'\'(3170-3871]\'','\'(8.06-1512]\'','\'(87.5-110.5]\'',360,1,Semiurban,Y
+Female,Yes,1,Graduate,Yes,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Semiurban,Y
+Male,Yes,0,Graduate,No,'\'(4906-7320.5]\'','\'(1916-2431]\'','\'(187.5-inf)\'',360,1,Rural,Y
+Male,No,0,'Not Graduate',Yes,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Semiurban,Y
+Male,Yes,2,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,0,Urban,N
+Male,No,0,Graduate,No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Urban,Y
+Male,Yes,3+,Graduate,No,'\'(3170-3871]\'','\'(2431-3675]\'','\'(110.5-128.5]\'',360,0,Rural,N
+Female,No,0,Graduate,No,'\'(-inf-2503.5]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Urban,N
+Male,Yes,0,Graduate,No,'\'(2503.5-3170]\'','\'(1916-2431]\'','\'(87.5-110.5]\'',360,0,Urban,N
+Male,Yes,1,Graduate,No,'\'(3170-3871]\'','\'(1512-1916]\'','\'(152.5-187.5]\'',360,1,Urban,Y
+Male,Yes,2,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Urban,Y
+Male,Yes,2,'Not Graduate',No,'\'(4906-7320.5]\'','\'(1512-1916]\'','\'(152.5-187.5]\'',480,1,Semiurban,N
+Male,Yes,3+,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,1,Semiurban,N
+Male,Yes,2,Graduate,No,'\'(2503.5-3170]\'','\'(8.06-1512]\'','\'(87.5-110.5]\'',84,1,Urban,Y
+Male,No,0,Graduate,No,'\'(3170-3871]\'','\'(2431-3675]\'','\'(87.5-110.5]\'',360,1,Urban,Y
+Male,Yes,1,Graduate,No,'\'(-inf-2503.5]\'','\'(1916-2431]\'','\'(87.5-110.5]\'',360,1,Rural,Y
+Male,Yes,2,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Semiurban,Y
+Male,No,0,Graduate,No,'\'(-inf-2503.5]\'','\'(3675-inf)\'','\'(87.5-110.5]\'',360,1,Urban,N
+Female,Yes,0,Graduate,No,'\'(2503.5-3170]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Semiurban,Y
+Male,Yes,1,Graduate,No,'\'(2503.5-3170]\'','\'(1916-2431]\'','\'(128.5-152.5]\'',360,0,Rural,N
+Male,Yes,1,Graduate,No,'\'(3871-4906]\'','\'(2431-3675]\'','\'(152.5-187.5]\'',84,1,Rural,N
+Male,Yes,0,Graduate,No,'\'(-inf-2503.5]\'','\'(1512-1916]\'','\'(87.5-110.5]\'',360,1,Urban,Y
+Female,No,0,'Not Graduate',No,'\'(-inf-2503.5]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Semiurban,Y
+Male,Yes,2,Graduate,Yes,'\'(2503.5-3170]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,0,Semiurban,N
+Male,Yes,0,Graduate,No,'\'(2503.5-3170]\'','\'(2431-3675]\'','\'(-inf-87.5]\'',180,1,Semiurban,Y
+Male,Yes,2,Graduate,Yes,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',240,1,Semiurban,N
+Male,Yes,0,Graduate,No,'\'(3170-3871]\'','\'(2431-3675]\'','\'(128.5-152.5]\'',180,1,Rural,Y
+Male,Yes,0,Graduate,Yes,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Urban,Y
+Male,No,0,'Not Graduate',No,'\'(3170-3871]\'','\'(-inf-8.06]\'','\'(87.5-110.5]\'',360,1,Rural,Y
+Male,Yes,2,'Not Graduate',Yes,'\'(4906-7320.5]\'','\'(8.06-1512]\'','\'(152.5-187.5]\'',360,1,Rural,N
+Male,Yes,0,Graduate,Yes,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',360,1,Rural,Y
+Male,Yes,2,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Urban,Y
+Male,Yes,3+,Graduate,No,'\'(4906-7320.5]\'','\'(-inf-8.06]\'','\'(110.5-128.5]\'',360,1,Urban,Y
+Male,No,0,Graduate,No,'\'(3170-3871]\'','\'(3675-inf)\'','\'(152.5-187.5]\'',360,1,Rural,Y
+Female,Yes,1,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(187.5-inf)\'',360,1,Semiurban,Y
+Male,Yes,1,Graduate,No,'\'(3170-3871]\'','\'(2431-3675]\'','\'(152.5-187.5]\'',360,1,Semiurban,Y
+Male,Yes,2,'Not Graduate',No,'\'(3871-4906]\'','\'(8.06-1512]\'','\'(152.5-187.5]\'',360,1,Rural,Y
+Male,Yes,0,Graduate,No,'\'(3170-3871]\'','\'(1916-2431]\'','\'(87.5-110.5]\'',360,1,Rural,Y
+Female,No,0,Graduate,No,'\'(2503.5-3170]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',360,1,Rural,Y
+Male,Yes,3+,Graduate,No,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(-inf-87.5]\'',180,1,Rural,Y
+Male,Yes,1,Graduate,No,'\'(7320.5-inf)\'','\'(8.06-1512]\'','\'(187.5-inf)\'',360,1,Urban,Y
+Male,Yes,2,Graduate,No,'\'(7320.5-inf)\'','\'(-inf-8.06]\'','\'(152.5-187.5]\'',360,1,Urban,Y
+Female,No,0,Graduate,Yes,'\'(3871-4906]\'','\'(-inf-8.06]\'','\'(128.5-152.5]\'',360,0,Semiurban,N
